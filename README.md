@@ -1,8 +1,8 @@
 # Realtime Collaborative IDE
 
-A realtime collaborative IDE with code execution, intellisense, and built-in USACO submissions. Designed primarily for Competitive Programming and USACO, with mobile support for coding on the go.
+A realtime collaborative IDE with code execution, intellisense, and built-in IDE innit submissions. Designed primarily for Competitive Programming and collaborative programming, with mobile support for coding on the go.
 
-This IDE is built and maintained by [Nathan Wang](https://github.com/thecodingwizard) and [Benjamin Qi](https://github.com/bqi343/), and is part of the [Competitive Programming Initiative](https://joincpi.org/).
+This IDE is built and maintained by [Lajat Manekar](https://github.com/Lazeeez).
 
 ## Running Locally
 
@@ -50,7 +50,7 @@ Infrastructure monitoring is generously provided by Datadog's OSS program.
 
 ## Contact Info
 
-If you have any questions, please open an issue or reach out to us at usacoguide@gmail.com.
+If you have any questions, please open an issue or reach out to us at lajatm9@gmail.com.
 
 ## Misc Notes
 

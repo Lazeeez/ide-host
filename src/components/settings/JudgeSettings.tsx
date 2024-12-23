@@ -23,7 +23,7 @@ export default function JudgeSettings({
             htmlFor={`problem-select`}
             className="block font-medium text-gray-700"
           >
-            USACO Problem Selection
+            IDE innit Problem Selection
           </label>
           {problem ? (
             <p className="text-sm text-gray-500 mt-1 mb-2">
@@ -61,8 +61,8 @@ export default function JudgeSettings({
             canChange={canChange}
           />
           <p className="mt-2 text-sm text-gray-500">
-            This will allow you to submit to USACO servers directly from the
-            IDE.
+            This will allow you to submit to IDE innit servers directly from
+            this IDE.
           </p>
         </div>
       </div>

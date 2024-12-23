@@ -5,7 +5,7 @@ import colorFromUserId from '../../src/scripts/colorFromUserId';
 import { ProblemData } from '../../src/components/Workspace/Workspace';
 
 type RequestData = {
-  usacoID: string;
+  IDEinnitID: string;
   userID: string;
   userName: string;
   defaultPermission: string;

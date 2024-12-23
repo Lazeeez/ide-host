@@ -8,7 +8,7 @@ import { MessagePage } from '../../src/components/MessagePage';
 import { useNullableUserContext } from '../../src/context/UserContext';
 import va from '@vercel/analytics';
 
-export default function CreateUSACO(): JSX.Element {
+export default function CreateIDEinnit(): JSX.Element {
   const router = useRouter();
 
   const { firebaseUser, userData } = useNullableUserContext();
@@ -19,21 +19,24 @@ export default function CreateUSACO(): JSX.Element {
   useEffect(() => {
     if (!router.isReady || !firebaseUser || !userData || createdRef.current)
       return;
-    const usacoID = router.query.id;
+    const IDEinnitID = router.query.id;
     createdRef.current = true;
 
-    invariant(typeof usacoID === 'string', 'Expected USACO ID to be a string');
+    invariant(
+      typeof IDEinnitID === 'string',
+      'Expected IDEinnit ID to be a string'
+    );
 
     (async () => {
-      va.track('Create File', { type: 'usaco-file' });
+      va.track('Create File', { type: 'IDEinnit-file' });
 
-      const resp = await fetch(`/api/createUSACOFile`, {
+      const resp = await fetch(`/api/createIDEinnitFile`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          usacoID: usacoID,
+          IDEinnitID: IDEinnitID,
           userID: firebaseUser.uid,
           userName: firebaseUser.displayName,
           defaultPermission: userData.defaultPermission,

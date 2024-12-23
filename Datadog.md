@@ -1,12 +1,8 @@
-# Datadog and the USACO Guide IDE
+# Datadog and the IDE innit
 
-[Datadog](https://www.datadoghq.com/) has generously provided its infrastructure monitoring capabilities to the USACO Guide IDE as part of its OSS program.
+[Datadog](https://www.datadoghq.com/) has generously provided its infrastructure monitoring capabilities to the IDE innit as part of its OSS program.
 
-The USACO Guide IDE uses Datadog to monitor our YJS server, which powers our realtime collaborative text editor, as well as the code execution engine on AWS Lambda.
-
-## YJS Server
-
-Our [YJS Server](https://github.com/cpinitiative/ide-yjs) is a simple Node.js server running on an Azure VM instance. We have had ongoing stability issues associated with the YJS server as sudden spikes in traffic can easily overwhelm the server, bringing the entire IDE down. We were able to use Datadog Monitors and Datadog Metrics to improve uptime and better understand the scope of the issue.
+The IDE innit uses Datadog to monitor our YJS server, which powers our realtime collaborative text editor, as well as the code execution engine on AWS Lambda.
 
 ### Datadog Metrics
 

@@ -168,7 +168,6 @@ function EditorPage() {
         if (samples.length > 1) {
           let verdicts = '';
           for (const result of results) {
-            // https://newjudge0.usaco.guide/#statuses-and-languages-status-get
             if (result.status === 'compile_error') {
               // compilation error
               setJudgeResults([result]);
@@ -270,7 +269,6 @@ export default function FilePage() {
   const loadingUI = (
     <MessagePage message="Loading..." showHomeButton={false} noIndex />
   );
-  const oldLink = `https://legacy.ide.usaco.guide/${queryId}`;
   const fileNotFoundUI = (
     <div className="p-8 sm:p-16">
       <div className=" max-w-prose mx-auto">
@@ -278,12 +276,9 @@ export default function FilePage() {
           File Not Found
         </div>
         <p className="sm:text-lg mt-8 text-gray-200 max-w-prose mx-auto text-left">
-          Note: The IDE was recently updated to use a new backend system. If
-          you&apos;re trying to access an old file you created with the old
-          version of the IDE, try this link:{' '}
-          <a href={oldLink} className="font-medium text-white underline">
-            {oldLink}
-          </a>
+          Note: There was a problem occured while fetching the following file.
+          Feel free to raise an issue if you think something is wrong feel free
+          to raise an issue on our Github.
         </p>
         <Link
           href="/"

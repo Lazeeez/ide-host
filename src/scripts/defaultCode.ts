@@ -1,6 +1,5 @@
 export default {
-  cpp: `// Source: https://usaco.guide/general/io
-
+  cpp: `
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -9,8 +8,7 @@ int main() {
 \tcout << "The sum of these three numbers is " << a + b + c << "\\n";
 }
 `,
-  java: `// Source: https://usaco.guide/general/io
-
+  java: `
 import java.io.*;
 import java.util.StringTokenizer;
 
@@ -33,8 +31,7 @@ public class Main {
 \t}
 }
 `,
-  py: `# Source: https://usaco.guide/general/io
-
+  py: `
 a, b, c = map(int, input().split())
 print("The sum of these three numbers is", a + b + c)
 `,
