@@ -48,7 +48,7 @@ export default async (
     !data.userName ||
     !data.defaultPermission ||
     !data.userID ||
-    !data.usacoID
+    !data.IDEinnitID
   ) {
     res.status(400).json({
       message: 'Bad data',
@@ -56,7 +56,7 @@ export default async (
     return;
   }
 
-  const problem = await fetchProblemData(data.usacoID);
+  const problem = await fetchProblemData(data.IDEinnitID);
   if (problem === null) {
     res.status(400).json({
       message: 'Could not identify problem ID.',
