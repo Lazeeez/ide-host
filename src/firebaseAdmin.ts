@@ -31,7 +31,7 @@ if (getApps().length === 0) {
     });
   } else {
     initializeApp({
-      projectId: 'IDEinnit',
+      projectId: 'ideinnit',
       databaseURL: 'http://127.0.0.1:9000?ns=ideinnit-default-rtdb',
     });
   }

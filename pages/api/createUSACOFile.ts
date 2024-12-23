@@ -5,7 +5,7 @@ import colorFromUserId from '../../src/scripts/colorFromUserId';
 import { ProblemData } from '../../src/components/Workspace/Workspace';
 
 type RequestData = {
-  IDEinnitID: string;
+  ideinnitID: string;
   userID: string;
   userName: string;
   defaultPermission: string;
@@ -48,7 +48,7 @@ export default async (
     !data.userName ||
     !data.defaultPermission ||
     !data.userID ||
-    !data.IDEinnitID
+    !data.ideinnitID
   ) {
     res.status(400).json({
       message: 'Bad data',
@@ -56,7 +56,7 @@ export default async (
     return;
   }
 
-  const problem = await fetchProblemData(data.IDEinnitID);
+  const problem = await fetchProblemData(data.ideinnitID);
   if (problem === null) {
     res.status(400).json({
       message: 'Could not identify problem ID.',

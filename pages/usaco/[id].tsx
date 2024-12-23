@@ -8,7 +8,7 @@ import { MessagePage } from '../../src/components/MessagePage';
 import { useNullableUserContext } from '../../src/context/UserContext';
 import va from '@vercel/analytics';
 
-export default function CreateIDEinnit(): JSX.Element {
+export default function Createideinnit(): JSX.Element {
   const router = useRouter();
 
   const { firebaseUser, userData } = useNullableUserContext();

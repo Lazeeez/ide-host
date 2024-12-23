@@ -33,7 +33,7 @@ const USACOTestCase = ({ data }: { data: any }) => {
   );
 };
 
-export default function IDEinnitResults({
+export default function ideinnitResults({
   data,
 }: {
   data: any;
