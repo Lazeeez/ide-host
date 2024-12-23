@@ -14,8 +14,7 @@ import { SHOULD_USE_FIREBASE_EMULATOR } from '../src/dev_constants';
 const firebaseConfig = {
   apiKey: 'AIzaSyA3ZkrucMoR-PnaPb7S-JkvhGya7gT9vTs',
   authDomain: 'ideinnit.firebaseapp.com',
-  databaseURL:
-    'https://ideinnit-default-rtdb.asia-southeast1.firebasedatabase.app',
+  databaseURL: 'https://ideinnit-default-rtdb.asia-southeast1.firebasedatabase.app',
   projectId: 'ideinnit',
   storageBucket: 'ideinnit.firebasestorage.app',
   messagingSenderId: '549016679692',
